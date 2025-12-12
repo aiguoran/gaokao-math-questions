@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>高考数学题库</title>
+  
+  <!-- KaTeX CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>📚 知识点分类</h2>
+      <div id="categories"></div>
+    </aside>
+    <main class="main">
+      <div class="header">
+        <h1 id="current-title">请选择知识点和题型</h1>
+        <div class="pagination" id="pagination"></div>
+      </div>
+      <div id="questions" class="questions"></div>
+    </main>
+  </div>
+
+  <!-- KaTeX JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  
+  <!-- App Logic -->
+  <script src="app_vercel.js"></script>
+</body>
+</html>
